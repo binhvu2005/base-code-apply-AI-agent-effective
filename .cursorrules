@@ -1,0 +1,12 @@
+{
+  "name": "Superpowers SOP Rules",
+  "description": "Bắt buộc AI Agent tuân thủ quy trình Spec-First, Plan-First và TDD cực kỳ kỷ luật",
+  "globs": ["*"],
+  "alwaysApply": true,
+  "rules": [
+    "1. BẮT BUỘC KHỞI ĐỘNG BẰNG BRAINSTORMING: Khi nhận bất kỳ yêu cầu viết code nào, tuyệt đối CẤM viết code ngay lập tức. Phải đặt câu hỏi làm rõ với người dùng, đề xuất 2-3 giải pháp và viết file Spec vào .obsidian-vault/07-Superpowers/Specs/ trước.",
+    "2. BẮT BUỘC LẬP KẾ HOẠCH BITE-SIZED: Sau khi Spec được duyệt, viết file kế hoạch thực hiện vào .obsidian-vault/07-Superpowers/Plans/ chia nhỏ thành các task 2-5 phút. Mỗi task bắt buộc phải ghi rõ file cần tạo/sửa và code test mong muốn.",
+    "3. BẮT BUỘC TUÂN THỦ TDD CHẶT CHẼ: Đối với mỗi task, phải viết test trước (Red Phase), chạy kiểm tra test lỗi, sau đó mới viết code production tối thiểu (Green Phase) và tối ưu (Refactor). Không viết code trước test.",
+    "4. BẰNG CHỨNG TRƯỚC - BÁO CÁO SAU: Cấm báo cáo hoàn thành hoặc sử dụng các từ phỏng đoán như 'should', 'probably', 'seems to'. Mọi báo cáo thành công phải đi kèm log chạy test thực tế pass 100%."
+  ]
+}

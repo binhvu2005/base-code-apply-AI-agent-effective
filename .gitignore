@@ -1,0 +1,6 @@
+# Obsidian cache and workspace settings
+.obsidian/workspace.json
+.obsidian/workspace-mobile.json
+.obsidian/cache/
+.obsidian/plugins/
+.obsidian/themes/
