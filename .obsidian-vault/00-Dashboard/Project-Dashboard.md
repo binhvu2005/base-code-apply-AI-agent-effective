@@ -53,7 +53,7 @@ tags:
 ### 🤖 Superpowers Rules & Workflow
 - [[Coding-Rules]] | [[Testing-Rules]] | [[Security-Rules]]
 - [[Review-Checklist]] | [[Audit-Checklist]] | [[Obsidian-Conventions]]
-- **Workflows:** [[Feature-Development]] | [[Bug-Fix]] | [[Refactor]] | [[Release]]
+- **Workflows:** [[Full-Lifecycle]] | [[Feature-Development]] | [[Bug-Fix]] | [[Refactor]] | [[Release]] | [[Research]] | [[Specs]] | [[Planning]] | [[TDD]] | [[Commit]] | [[CICD]] | [[Audit]] | [[Docs]] | [[Security]] | [[Performance]]
 
 ### 🧪 Testing
 - [[Test-Strategy]] | [[Test-Plan]]

@@ -1,7 +1,6 @@
 ---
 title: Testing Rules
-version: 1.0.0
-created: 2026-05-28
+version: 2.0.0
 ---
 
 # Testing Rules
@@ -14,7 +13,7 @@ created: 2026-05-28
 ## Test Types
 
 | Type | Location | Coverage |
-|------|---------|---------|
+|------|---------|---------| 
 | Unit | `*.spec.ts` / `*.test.ts` next to file | 85%+ |
 | Integration | `test/*.e2e-spec.ts` | Key flows |
 | E2E | Future | Critical paths |

@@ -10,17 +10,17 @@ tags: [prompt, ai, plan]
 ## Prompt: Tạo Implementation Plan
 
 ```
-Tôi đang implement {FEATURE} theo Superpowers methodology.
+Tôi đang implement {FEATURE} theo quy trình Superpowers.
 
-Spec đã approved:
+Tài liệu Spec đã được duyệt (Approved Spec):
 {PASTE SPEC HERE}
 
-Hãy tạo Implementation Plan theo cấu trúc sau:
-- Mỗi task = 2-5 phút thực hiện
-- Mỗi task phải có: file cần tạo/sửa + test case mong muốn + lệnh chạy test
-- Bắt đầu từ failing test (TDD Red Phase)
+Hãy tạo Implementation Plan (Kế hoạch thực thi) chi tiết dựa trên phần **Spec to Plan Checklist** ở Bước 6 của tài liệu Spec.
 
-Format:
+Yêu cầu kế hoạch:
+- Phân rã mỗi đầu việc thành các subtasks cực nhỏ (2-5 phút thực hiện).
+- Mỗi task phải có: file cần tạo/sửa + test case mong muốn (nếu có) + lệnh chạy test.
+- Tuân thủ quy trình TDD nghiêm ngặt (viết test RED trước, viết code GREEN sau, sau đó REFACTOR).
 
 ---
 type: implementation-plan

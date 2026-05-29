@@ -1,7 +1,6 @@
 ---
 title: Coding Rules
-version: 1.0.0
-created: 2026-05-28
+version: 2.0.0
 ---
 
 # Coding Rules
@@ -12,7 +11,7 @@ created: 2026-05-28
 
 Tuyệt đối **KHÔNG** viết bất kỳ logic code nào nếu chưa có Spec được phê duyệt.
 
-- Spec file ở: `.obsidian-vault/07-Superpowers/Specs/` hoặc `.obsidian-vault/02-Specs/`
+- Spec file ở: `.obsidian-vault/07-Superpowers/Specs/`
 - Spec phải có: Problem, Goal, API, Database, Edge Cases, Acceptance Criteria
 - **Action**: Nếu không có Spec → Tạo Spec trước, hỏi xác nhận, sau đó mới code
 
@@ -36,10 +35,7 @@ REFACTOR: Clean up
 ## ⚔️ Iron Law 3: EVIDENCE BEFORE REPORT
 
 **CẤM TUYỆT ĐỐI** dùng các cụm từ:
-- "Should work"
-- "Hình như xong rồi"
-- "Probably fine"
-- "I think it's working"
+- "Should work" / "Hình như xong rồi" / "Probably fine" / "I think it's working"
 
 Mọi báo cáo hoàn thành PHẢI kèm test output thực tế:
 
@@ -55,7 +51,7 @@ Mọi báo cáo hoàn thành PHẢI kèm test output thực tế:
 ### Naming Conventions
 
 | Type | Convention | Example |
-|------|-----------|---------|
+|------|-----------|---------| 
 | Variables | camelCase | `userId`, `itemTitle` |
 | Constants | UPPER_SNAKE | `MAX_FILE_SIZE_MB` |
 | Classes | PascalCase | `UserService` |
@@ -133,19 +129,22 @@ Types:
   chore    Config, build
 
 Examples:
-  ✅ feat(auth): add JWT refresh token rotation
-  ✅ test(users): add unit tests for create user
-  ✅ fix(payment): handle edge case for zero amount
+✅ feat(auth): add JWT refresh token rotation
+✅ test(users): add unit tests for create user
+✅ fix(payment): handle edge case for zero amount
+❌ update stuff
+❌ fix bug
+❌ WIP
 ```
 
 ---
 
 ## 🧪 Testing Rules (Summary)
 
-See [[Testing-Rules]] for full testing guidelines.
+See `.agent/rules/testing-rules.md` for full testing guidelines.
 
 Summary:
-- Unit tests next to source file
+- Unit tests next to source file (`*.spec.ts`)
 - Integration tests in `test/` directory
 - Test coverage minimum: **85%**
 - Always mock external services in unit tests

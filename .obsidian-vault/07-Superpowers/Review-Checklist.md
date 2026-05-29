@@ -1,7 +1,5 @@
 ---
-title: Review Checklist
-version: 1.0.0
-created: 2026-05-28
+trigger: model_decision
 ---
 
 # Review Checklist
@@ -10,7 +8,9 @@ created: 2026-05-28
 
 ## ✅ Iron Laws Check
 
-- [ ] **Spec tồn tại** trong `.obsidian-vault/07-Superpowers/Specs/` hoặc `.obsidian-vault/02-Specs/` và đã được xem qua trước khi code.
+- [ ] **Spec tồn tại**: `.obsidian-vault/07-Superpowers/Specs/YYYY-MM-DD-<ten-tinh-nang>-design.md` đã được duyệt.
+- [ ] **Plan tồn tại**: `.obsidian-vault/07-Superpowers/Plans/YYYY-MM-DD-<ten-tinh-nang>-plan.md` đã được chia nhỏ và cập nhật tích xanh `- [x]` tiến độ.
+- [ ] **Môi trường cô lập**: Thực hiện trên branch cô lập hoặc worktree riêng.
 - [ ] **Failing tests viết trước** (không có code nào viết trước test).
 - [ ] **Có evidence**: test output với 0 failures (copy paste actual output).
 
@@ -70,14 +70,15 @@ created: 2026-05-28
 ## ✅ Git
 
 - [ ] Commit message format đúng: `type(scope): description`.
+- [ ] Lịch sử commit rõ ràng, chia nhỏ theo từng task trong Plan.
 - [ ] Không có merge conflicts.
-- [ ] Branch name: `feature/{feature-name}` hoặc `fix/{bug-name}`.
+- [ ] Branch name: `feature/<ten-tinh-nang>` hoặc `fix/<bug-name>`.
 
 ---
 
 ## ✅ Documentation Update
 
-- [ ] Tài liệu dự án trong `.obsidian-vault` được cập nhật nếu có thay đổi.
+- [ ] Tài liệu dự án cập nhật nếu có thay đổi trong `.obsidian-vault/`.
 
 ---
 
@@ -89,11 +90,9 @@ Khi báo cáo hoàn thành, dùng template này:
 ## Feature: [Feature Name]
 
 ### Evidence
-```
 test output (paste actual output):
 ✓ Tests: X passed, 0 failed
 Coverage: XX%
-```
 
 ### Spec Compliance
 - [x] Acceptance criteria #1: [description]

@@ -1,8 +1,6 @@
 ---
 title: Project Context
-author: Solo Developer
-created: 2026-05-28
-version: 1.0.0
+version: 2.0.0
 ---
 
 # Project Context (AI Agent Read This First)
@@ -50,8 +48,7 @@ This is a **solo developer project**. You are the AI coding agent assisting the 
 
 ## Coding Standards (MANDATORY)
 
-Summary:
-1. **NO CODE without Spec** → Spec lives in `.obsidian-vault/07-Superpowers/Specs/` hoặc `.obsidian-vault/02-Specs/`
+1. **NO CODE without Spec** → Spec lives in `.obsidian-vault/07-Superpowers/Specs/`
 2. **NO CODE without failing test** → TDD: Red → Green → Refactor
 3. **NO "should work" reporting** → Show test output as proof
 
@@ -65,17 +62,20 @@ Summary:
 
 ## Key Documents
 
-- Specs: `.obsidian-vault/07-Superpowers/Specs/` hoặc `.obsidian-vault/02-Specs/`
+- Specs: `.obsidian-vault/07-Superpowers/Specs/`
 - Plans: `.obsidian-vault/07-Superpowers/Plans/`
-- Architecture: `.obsidian-vault/03-Architecture/`
-- Coding Convention: [[Coding-Convention]]
+- Coding Rules: `.agent/rules/coding-rules.md`
+- Testing Rules: `.agent/rules/testing-rules.md`
+- Security Rules: `.agent/rules/security-rules.md`
+- Review Checklist: `.agent/rules/review-checklist.md`
+- Workflows: `.agent/workflows/`
 
 ---
 
 ## Questions to Ask Before Coding
 
 Before implementing any feature, ask yourself:
-1. Is there a Spec for this in `.obsidian-vault/07-Superpowers/Specs/` or `.obsidian-vault/02-Specs/`?
+1. Is there a Spec for this in `.obsidian-vault/07-Superpowers/Specs/`?
 2. Does it align with the Architecture?
 3. Do I have failing tests written first?
 4. Does this affect critical business logic?

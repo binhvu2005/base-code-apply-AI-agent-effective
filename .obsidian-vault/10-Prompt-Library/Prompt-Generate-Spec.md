@@ -10,57 +10,52 @@ tags: [prompt, ai, spec]
 ## Prompt: Tạo SRS Document
 
 ```
-Tôi cần bạn tạo SRS (Software Requirements Specification) cho module: {MODULE_NAME}
+Tôi cần bạn tạo tài liệu Đặc tả kỹ thuật (Specs - Design Doc) cho module: {MODULE_NAME}
 
 Context:
 - Tech stack: {TECH_STACK}
-- Business rules: {KEY_BUSINESS_RULES}
+- Yêu cầu chính: {KEY_REQUIREMENTS}
 
-Tạo SRS theo cấu trúc sau:
+Hãy tạo tài liệu Đặc tả kỹ thuật theo cấu trúc sau:
 
 ---
-title: SRS — {Module Name}
+title: Specs — {Module Name}
 type: spec
 module: {module-slug}
 status: Draft
 created: {date}
 ---
 
-# SRS — {Module Name}
+# Specs — {Module Name}
 
-## Problem
-(Vấn đề gì đang giải quyết?)
+## 1. Context & Objectives (Bối cảnh & Yêu cầu)
+- Vấn đề cốt lõi cần giải quyết là gì?
+- Mục tiêu cụ thể.
 
-## Goal
-(Mục tiêu cụ thể)
+## 2. Design Alternatives & Selection (Lên ý tưởng & So sánh phương án)
+- **Ý tưởng/Phương án 1:** [Mô tả cách tiếp cận] - Ưu/nhược điểm.
+- **Ý tưởng/Phương án 2:** [Mô tả cách tiếp cận] - Ưu/nhược điểm.
+- **Lựa chọn tối ưu:** Chọn phương án nào và lập luận kỹ thuật tại sao chọn.
 
-## Scope
-**In scope:**
-- ...
+## 3. Database Design (Thiết kế Cơ sở dữ liệu)
+- Sơ đồ quan hệ thực thể bằng Mermaid (ERD).
+- Định nghĩa chi tiết các bảng (tên bảng, các cột kèm kiểu dữ liệu, PK, FK, Constraints, Indexes).
 
-**Out of scope:**
-- ...
+## 4. API Design (Thiết kế API Endpoints)
+- Danh sách API Map.
+- Chi tiết từng endpoint (URL, HTTP Method, Request Headers/Body, Response mẫu Success + Error kèm HTTP status codes).
 
-## User Flow
-(Luồng user step by step)
+## 5. Flow & State Machine (Luồng xử lý)
+- Vẽ Sequence Diagram bằng Mermaid cho các luồng xử lý hoặc State Machine cho các thực thể.
 
-## Technical Design
-(Architecture, data flow)
+## 6. Spec to Plan Checklist (Đẩy thiết kế sang Plan)
+- Liệt kê danh sách các đầu việc kỹ thuật cụ thể (checklists) từ thiết kế trên để làm đầu vào lập Plan.
 
-## API
-| Method | Endpoint | Auth | Mô tả |
+## 7. Edge Cases
+- Liệt kê các edge cases (Race conditions, validation errors, timeouts) và hướng xử lý.
 
-## Database
-(SQL schema)
-
-## Edge Cases
-| Case | Handling |
-
-## Acceptance Criteria
-- [ ] ...
-
-## Related
-- [[...]]
+## 8. Acceptance Criteria
+- Các tiêu chí nghiệm thu xanh.
 ```
 
 ## Prompt: Brainstorm Edge Cases

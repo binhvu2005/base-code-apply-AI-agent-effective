@@ -1,7 +1,5 @@
 ---
-title: Security Rules
-version: 1.0.0
-created: 2026-05-28
+trigger: model_decision
 ---
 
 # Security Rules
@@ -31,8 +29,6 @@ Before any mutation, verify the user owns the resource.
 ---
 
 ## 3. Rate Limiting
-
-<!-- TODO: Điền rate limiting cho từng endpoint -->
 
 | Endpoint | Limit | Window |
 |----------|-------|--------|
