@@ -1,0 +1,40 @@
+body {
+    background-color: #ffffff !important;
+    color: #333333 !important;
+}
+
+a {
+    color: #0366d6 !important;
+}
+
+pre, code {
+    background-color: #f6f8fa !important;
+    color: #24292e !important;
+}
+
+blockquote {
+    color: #6a737d !important;
+    border-left: 0.25em solid #dfe2e5 !important;
+}
+
+table tr {
+    background-color: #ffffff !important;
+    border-top: 1px solid #c6cbd1 !important;
+}
+
+table tr:nth-child(2n) {
+    background-color: #f6f8fa !important;
+}
+
+table th, table td {
+    border: 1px solid #dfe2e5 !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: #111111 !important;
+    border-bottom-color: #eaecef !important;
+}
+
+hr {
+    background-color: #e1e4e8 !important;
+}
